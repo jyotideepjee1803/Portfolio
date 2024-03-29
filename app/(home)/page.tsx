@@ -14,8 +14,12 @@ export default function page() {
           <Hero />
         </div>
       </div>
-      <Skills/>
-      <Profile/>
+      <div className='w-full relative'>
+        <div className='max-w-7xl mx-auto'>
+          <Skills/>
+          <Profile/>
+        </div>
+      </div>
       <Projects/>
     </div>
   )

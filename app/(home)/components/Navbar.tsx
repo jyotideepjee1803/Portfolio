@@ -26,7 +26,7 @@ export default function Navbar() {
             <div className='flex items-center gap-5'>
                 {socials.map((item, index)=>{
                     const Icon = item.Icon
-                    return <Link href={item.Link} key={index} aria-label={item.Label}> <Icon className='w-5 h-5 hover:scale-125 transition-all'/> </Link>
+                    return <Link href={item.Link} key={index} aria-label={item.Label} className='z-[20]'> <Icon className='w-5 h-5 hover:scale-125 transition-all '/> </Link>
                 })}
             </div>
         </nav>
