@@ -3,6 +3,7 @@ import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import GalaxyCanvas from "@/components/galaxy-canvas";
+import { Navbar } from "./(home)/components/Navbar";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
+            <Navbar/>
             {children}
           </ThemeProvider>
         </body>
