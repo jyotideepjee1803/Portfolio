@@ -11,21 +11,21 @@ import Link from "next/link";
 
 const navItems = [
     {
-      name: "About",
-      link: "/about",
+      name: "Profiles",
+      link: "#profiles",
     //   icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
     {
        name: "Skill",
-       link: "/skill",
+       link: "#skills",
     },
     {
         name: "Project",
-        link: "/project",
+        link: "#projects",
     },
     {
       name: "Contact",
-      link: "/contact",
+      link: "#contact",
     },
 
 ];

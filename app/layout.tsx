@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
        <body className={spaceGrotesk.className}>
-          <GalaxyCanvas/>
+          {/* <GalaxyCanvas/> */}
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"

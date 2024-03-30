@@ -11,6 +11,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { products } from "@/constants";
+import { IconType } from "react-icons/lib";
+import { SiGithub } from "react-icons/si";
 
 export default function Projects () {
   const firstRow = products.slice(0, 4);
@@ -48,7 +50,8 @@ export default function Projects () {
     springConfig
   );
   return (
-    <div
+    <section
+      id = "projects"
       ref={ref}
       className="h-[300vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d] z-[20]"
     >
@@ -81,7 +84,7 @@ export default function Projects () {
           ))}
         </motion.div>
       </motion.div>
-    </div>
+    </section>
   );
 };
 
@@ -107,6 +110,8 @@ export const ProductCard = ({
     title: string;
     link: string;
     thumbnail: string;
+    github? :string;
+    tech? : IconType[];
   };
   translate: MotionValue<number>;
 }) => {
@@ -134,11 +139,16 @@ export const ProductCard = ({
         />
       {/* </Link> */}
       <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
+      {/* <div className="flex items-center gap-5">
+        {product.tech?.map((Icon, index)=>{
+          return <Icon className="w-8 h-8" key={index}/>
+        })}
+      </div> */}
       <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
-        {product.title}
+        <Link href={product.link}> <span className="underline">{product.title}</span></Link>
       </h2>
-      <h2 className="absolute bottom-4 right-4 opacity-0 group-hover/product:opacity-100 text-white">
-        {product.title}
+      <h2 className="absolute top-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
+        <Link href={product.github ? product.github : "#projects"} target="_blank"><SiGithub className="w-5 h-5 hover:scale-125 transition-all"/></Link>
       </h2>
     </motion.div>
   );

@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Profile from './components/Profile'
+import Contact from './components/Contact'
 
 export default function page() {
   return (
@@ -18,9 +19,11 @@ export default function page() {
         <div className='max-w-7xl mx-auto'>
           <Skills/>
           <Profile/>
+          <Projects/>
+          <Contact/>
         </div>
       </div>
-      <Projects/>
+      
     </div>
   )
 }

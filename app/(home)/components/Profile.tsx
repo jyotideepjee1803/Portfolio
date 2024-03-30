@@ -9,7 +9,7 @@ import { SiCodeforces, SiLeetcode } from "react-icons/si";
 
 export default function Profile() {
   return (
-    <div className='min-h-[60vh] flex flex-col-reverse gap-14 lg:gap-0 lg:flex-row items-center justify-between'>
+    <section id="profiles" className='min-h-[60vh] flex flex-col-reverse gap-14 lg:gap-0 lg:flex-row items-center justify-between'>
        <h1 className='text-4xl lg:text-7xl font-bold'>    
           Coding Profiles
       </h1>
@@ -53,6 +53,6 @@ export default function Profile() {
         </PinContainer>
       
       </div>
-    </div>
+    </section>
   );
 }

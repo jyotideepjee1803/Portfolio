@@ -1,3 +1,5 @@
+import { SiCss3, SiExpress, SiFastapi, SiMongodb, SiMui, SiNodedotjs, SiRazorpay, SiReact, SiSass, SiSocketdotio } from "react-icons/si";
+
 export const Skill_data = [
     {
       skill_name: "Html 5",
@@ -185,6 +187,7 @@ export const Skill_data = [
       link: "https://crypto-tracer-site.netlify.app/",
       thumbnail: "/Crypto.png",
       github: 'https://github.com/jyotideepjee1803/Tours_travels_template',
+      tech : [SiReact, SiCss3, SiFastapi]
     },
   
     {
@@ -192,12 +195,14 @@ export const Skill_data = [
       link: "https://jyotideep-tour-design.netlify.app/",
       thumbnail: "/Tours.png",
       github: 'https://github.com/jyotideepjee1803/crypto_tracker',
+      tech : [SiReact, SiSass]
     },
     {
       title: "Messy",
       link: "https://messy.vercel.app",
       thumbnail: "/Messy.png",
       github: 'https://github.com/jyotideepjee1803/Messy',
+      tech : [SiReact, SiMui, SiNodedotjs, SiExpress, SiMongodb, SiRazorpay]
     },
     {
       title: "Aceternity UI",
@@ -216,12 +221,14 @@ export const Skill_data = [
       link: "https://baat-chat-app.onrender.com",
       thumbnail: "/Chat.png",
       github: 'https://github.com/jyotideepjee1803/Baat',
+      tech : [SiReact, SiNodedotjs, SiMongodb, SiExpress, SiSocketdotio]
     },
     {
       title: "Coder Stats",
       link: "https://coder-stats-client.vercel.app/",
       thumbnail:
         "https://aceternity.com/images/products/thumbnails/new/editrix.png",
+      tech : [SiReact, SiMui, SiNodedotjs, SiExpress]
     },
     {
       title: "Tailwind Master Kit",
