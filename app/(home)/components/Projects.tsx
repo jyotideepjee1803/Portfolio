@@ -15,7 +15,7 @@ import { IconType } from "react-icons/lib";
 import { SiGithub } from "react-icons/si";
 
 export default function Projects () {
-  const firstRow = products.slice(0, 4);
+  const firstRow = products.slice(0, 3);
   const secondRow = products.slice(4, 10);
   const ref = React.useRef(null);
   const { scrollYProgress } = useScroll({

@@ -1,4 +1,4 @@
-import { SiCss3, SiExpress, SiFastapi, SiMongodb, SiMui, SiNodedotjs, SiRazorpay, SiReact, SiSass, SiSocketdotio } from "react-icons/si";
+import { SiCss3, SiExpress, SiFastapi, SiMongodb, SiMui, SiNextdotjs, SiNodedotjs, SiRazorpay, SiReact, SiSass, SiSocketdotio } from "react-icons/si";
 
 export const Skill_data = [
     {
@@ -189,13 +189,12 @@ export const Skill_data = [
       github: 'https://github.com/jyotideepjee1803/Tours_travels_template',
       tech : [SiReact, SiCss3, SiFastapi]
     },
-  
     {
-      title: "Tours and Travels",
-      link: "https://jyotideep-tour-design.netlify.app/",
-      thumbnail: "/Tours.png",
-      github: 'https://github.com/jyotideepjee1803/crypto_tracker',
-      tech : [SiReact, SiSass]
+      title: "Baat",
+      link: "https://baat-chat-app.onrender.com",
+      thumbnail: "/Chat.png",
+      github: 'https://github.com/jyotideepjee1803/Baat',
+      tech : [SiReact, SiNodedotjs, SiMongodb, SiExpress, SiSocketdotio]
     },
     {
       title: "Messy",
@@ -213,11 +212,11 @@ export const Skill_data = [
       link: "https://algochurn.com",
     },
     {
-      title: "Baat",
-      link: "https://baat-chat-app.onrender.com",
-      thumbnail: "/Chat.png",
-      github: 'https://github.com/jyotideepjee1803/Baat',
-      tech : [SiReact, SiNodedotjs, SiMongodb, SiExpress, SiSocketdotio]
+      title: "Tours and Travels",
+      link: "https://jyotideep-tour-design.netlify.app/",
+      thumbnail: "/Tours.png",
+      github: 'https://github.com/jyotideepjee1803/crypto_tracker',
+      tech : [SiReact, SiSass]
     },
     {
       title: "Coder Stats",
@@ -225,6 +224,12 @@ export const Skill_data = [
       thumbnail:'/coderStats.png',
       tech : [SiReact, SiMui, SiNodedotjs, SiExpress]
     },
+    {
+      title: "Portfolio",
+      link:"https://jyotideep-portfolio.vercel.app/",
+      thumbnail:'/portfolio.png',
+      tech: [SiNextdotjs]
+    }
   ];
   
   
