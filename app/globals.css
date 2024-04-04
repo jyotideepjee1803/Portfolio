@@ -91,3 +91,14 @@
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.vertical-text {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    /* transform: rotate(180deg);
+    transform-origin: bottom left; */
+}

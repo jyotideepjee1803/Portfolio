@@ -108,8 +108,8 @@ export const ProductCard = ({
 }: {
   product: {
     title: string;
-    link: string;
-    thumbnail: string;
+    link?: string;
+    thumbnail?: string;
     github? :string;
     tech? : IconType[];
   };
@@ -126,30 +126,35 @@ export const ProductCard = ({
       key={product.title}
       className="group/product h-96 w-[30rem] relative flex-shrink-0"
     >
-      {/* <Link
-        href={product.link}
-        className="block group-hover/product:shadow-2xl "
-      > */}
+      {product.thumbnail &&
         <Image
           src={product.thumbnail}
           height="600"
           width="600"
-          className="object-cover object-left-top absolute h-full w-full inset-0"
+          className="object-cover absolute h-full w-full inset-0"
           alt={product.title}
+          unoptimized
         />
-      {/* </Link> */}
+      }
       <div className="absolute inset-0 h-full w-full opacity-0 group-hover/product:opacity-80 bg-black pointer-events-none"></div>
-      {/* <div className="flex items-center gap-5">
-        {product.tech?.map((Icon, index)=>{
-          return <Icon className="w-8 h-8" key={index}/>
-        })}
-      </div> */}
-      <h2 className="absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
-        <Link href={product.link}> <span className="underline">{product.title}</span></Link>
-      </h2>
-      <h2 className="absolute top-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
-        <Link href={product.github ? product.github : "#projects"} target="_blank"><SiGithub className="w-5 h-5 hover:scale-125 transition-all"/></Link>
-      </h2>
+      
+        <div className='absolute bottom-4 left-4 opacity-0 group-hover/product:opacity-100'>
+        <Link href={product.link ? product.link : "#projects"}> <h1 className='text-2xl font-bold pb-5'>{product.title}</h1></Link>
+        <div className="flex items-center gap-5">
+        {
+          product.tech?.map((Icon, index) => {
+          return <Icon key={index} className='w-8 h-8' />;
+          })
+        }
+        </div>
+        </div>
+      
+      {
+        product.github &&
+        <h2 className="absolute top-4 left-4 opacity-0 group-hover/product:opacity-100 text-white">
+          <Link href={product.github ? product.github : "#projects"} target="_blank"><SiGithub className="w-5 h-5 hover:scale-125 transition-all"/></Link>
+        </h2>
+      }
     </motion.div>
   );
 };

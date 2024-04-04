@@ -2,8 +2,6 @@ import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
-import GalaxyCanvas from "@/components/galaxy-canvas";
-import { Navbar } from "./(home)/components/Navbar";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"] });
 
@@ -20,14 +18,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
        <body className={spaceGrotesk.className}>
-          {/* <GalaxyCanvas/> */}
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
           >
-            <Navbar/>
             {children}
           </ThemeProvider>
         </body>
